@@ -10,8 +10,8 @@ Basic template for react with express, typeorm and typescript
 
 # Quick Start
 ## Typeorm
-If you want also typeorm functional you will need to edit ormconfig.ts by your needs
-<https://typeorm.io/> see some quick guides
+If you want to set up typeorm you will need to edit ormconfig.ts by your needs. <br/>
+lookup some quick guides on typeorm: https://typeorm.io/ 
 
 ## App
 RUN `npm install && yarn install`<br/>
