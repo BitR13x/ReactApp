@@ -2,6 +2,7 @@ import express, { Request, Response } from "express";
 import { MyDataSource } from "./ormconfig";
 import path from 'path';
 import bcrypt from 'bcrypt';
+import "reflect-metadata"
 import cors from 'cors';
 import bodyParser from "body-parser";
 import helmet from "helmet";
