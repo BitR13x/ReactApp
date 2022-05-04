@@ -1,5 +1,5 @@
 # React template
-basic template for react with express and typeorm
+basic template for react with express, typeorm and typescript
 
 
 ## file structre
