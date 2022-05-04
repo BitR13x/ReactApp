@@ -1,9 +1,20 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      >
+        <Link to="/dashboard">dashboard</Link>
+      </nav>
+      <Outlet />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,6 +28,8 @@ function App() {
         >
           Learn React
         </a>
+
+
       </header>
     </div>
   );
