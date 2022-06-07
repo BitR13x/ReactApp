@@ -12,7 +12,7 @@ const hpp = require('hpp');
 
 import { Router } from "./api/routes/index";
 import { testAPIRouter } from "./api/routes/testAPI";
-const { HOST, PORT, saltRounds, production } = require('./config.json');
+const { HOST, PORT } = require('./config.json');
 import { jwtCreateAccessToken, jwtCreateRefreshToken, isAuth } from "./api/jwtokens";
 
 
@@ -37,7 +37,7 @@ app.use("/~testAPI", testAPIRouter);
 
 //? custom 404 not found
 app.get('*', (_req: Request, res: Response) => {
-    return res.status(404).sendFile(path.join(__dirname, 'build/404.html'));
+    return res.status(404).sendFile(path.join(__dirname, 'build/index.html'));
 });
 
 

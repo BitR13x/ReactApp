@@ -8,6 +8,7 @@ import {
 import './css/index.css';
 import App from './App';
 import Dashboard from "./components/Dashboard";
+import NoMatch from "./components/NoMatch";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,7 +18,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} exact />
         <Route path="/dashboard" element={<Dashboard />} />
-        
+        <Route path="*" element={<NoMatch />} status={404}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

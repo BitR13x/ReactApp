@@ -1,21 +1,12 @@
+import NavbarComponent from './components/Navbar';
 import logo from './logo.svg';
 import './css/App.css';
-import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/dashboard">dashboard</Link>
-      </nav>
-      <Outlet />
-      <header className="App-header">
+    <div>
+      <NavbarComponent />
+      <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -30,7 +21,7 @@ function App() {
         </a>
 
 
-      </header>
+      </div>
     </div>
   );
 }
