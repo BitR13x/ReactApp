@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from '../logo.svg';
 
 const NavbarComponent = () => {
     return (
         <React.Fragment>
-            <header style={{display: "flex"}}>
+            <header className='App-header'>
+            <div className='logo'>
+              <a href="/"><img src={logo} className="headerIcon" alt="logo" /></a>
+            </div>
               <nav className='App-navbar'>
                 <ul>  
                   <li>

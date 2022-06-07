@@ -5,7 +5,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import './css/index.css';
+import './scss/index.scss';
 import App from './App';
 import Dashboard from "./components/Dashboard";
 import NoMatch from "./components/NoMatch";
