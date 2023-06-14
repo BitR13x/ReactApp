@@ -11,7 +11,7 @@ import Dashboard from "./components/Dashboard";
 import NoMatch from "./components/NoMatch";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Provider } from 'react-redux';
-import { createUIStore } from 'redux-webext';
+import { store } from './store'
 
 const theme = createTheme({
   palette: {
@@ -31,7 +31,6 @@ const theme = createTheme({
 });
 
 async function initApp() {
-  const store = await createUIStore();
   const rootElement = document.getElementById('root') as HTMLElement;
   if (!rootElement) throw new Error('Failed to find the root element');
   const root = ReactDOM.createRoot(rootElement)
