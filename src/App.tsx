@@ -1,3 +1,4 @@
+import React from 'react';
 import NavbarComponent from './components/Navbar';
 import logo from './logo.svg';
 import './scss/App.scss';

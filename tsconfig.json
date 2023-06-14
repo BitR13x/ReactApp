@@ -1,7 +1,8 @@
 {
    "compilerOptions": {
       "target": "es6",
-      "module": "commonjs",
+      "module": "ESNext",
+      "jsx": "react",
       "esModuleInterop": true,
       "moduleResolution": "node",
       "allowJs": true,
@@ -9,7 +10,11 @@
       "outDir": "./build",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-      "sourceMap": true
+      "sourceMap": true,
+      "typeRoots": [
+         "node_modules/@types",
+         "node_modules/web-ext-types"
+       ]
    },
         "include": [
         "./api/src/**/*"
