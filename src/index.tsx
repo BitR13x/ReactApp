@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import './scss/index.scss';
 import App from './App';
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./pages/Dashboard";
 import NoMatch from "./components/NoMatch";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Provider } from 'react-redux';
