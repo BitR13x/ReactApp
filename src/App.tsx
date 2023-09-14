@@ -1,5 +1,6 @@
 import React from 'react';
 import NavbarComponent from './components/Navbar';
+//@ts-ignore
 import logo from './logo.svg';
 import './scss/App.scss';
 
