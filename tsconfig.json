@@ -1,8 +1,9 @@
 {
    "compilerOptions": {
       "target": "es6",
-      "module": "ESNext",
+      "module": "CommonJS",
       "jsx": "react",
+      "resolveJsonModule": true,
       "esModuleInterop": true,
       "moduleResolution": "node",
       "allowJs": true,
@@ -16,7 +17,6 @@
          "node_modules/web-ext-types"
        ]
    },
-        "include": [
-        "./api/src/**/*"
-    ]
+   "include": ["./api/src/**/*"],
+   "exclude": ["node_modules"]
 }

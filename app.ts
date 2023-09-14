@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import { MyDataSource } from "./ormconfig";
 import path from 'path';
-import bcrypt from 'bcrypt';
+import argon2 from 'argon2';
 import "reflect-metadata"
 import cors from 'cors';
 import bodyParser from "body-parser";
@@ -12,13 +12,12 @@ const hpp = require('hpp');
 
 import { Router } from "./api/routes/index";
 import { testAPIRouter } from "./api/routes/testAPI";
-const { HOST, PORT } = require('./config.json');
+import { HOST, PORT } from './config';
 import { jwtCreateAccessToken, jwtCreateRefreshToken, isAuth } from "./api/jwtokens";
 
 
 const app = express();
 
-app.use(cors());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "build")));
 app.use(bodyParser.json());
